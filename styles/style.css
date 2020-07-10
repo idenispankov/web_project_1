@@ -1,3 +1,10 @@
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 .page {
   min-width: 1100px;
   /* we don't know how to make mobile versions of websites yet, */
@@ -17,16 +24,16 @@
   max-height: 756px;
   position: relative;
   background-color: #f2f2f2;
+  margin-bottom: 100px;
   /* parameters for the header section */
 }
 
-.logo {
+.logo__header {
   width: 154px;
   height: 31px;
-  z-index: 10;
 }
 
-.logo_place_holder {
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -80,10 +87,8 @@
 
 /* Description Block */
 .description {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  min-height: 600px;
-  max-height: 756px;
+  /* padding-top: 100px; */
+  max-height: 600px;
 }
 
 .two-columns {
@@ -104,7 +109,7 @@
 }
 
 .two-columns__main-text {
-  width: 784px;
+  min-width: 784px;
   width: 80%;
 }
 
@@ -116,7 +121,7 @@
   padding-bottom: 30px;
 }
 
-.bottom-padding {
+.two-columns__paragraph:last-child {
   padding-bottom: 0;
 }
 
@@ -129,8 +134,10 @@
 /* Digits Block */
 
 .digits {
-  min-height: 600px;
-  max-height: 756px;
+  max-height: 600px;
+  padding: 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .section-title {
@@ -148,16 +155,30 @@
   font-weight: normal;
   width: 60%;
   text-align: center;
-  margin: 20px auto 60px auto;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.table {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
 }
 
 .table__heading {
-  line-height: 1.15px;
+  line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  margin: 0;
-  margin-bottom: 20px;
-  padding: 0;
 }
 
 .table__text {
@@ -165,34 +186,7 @@
   font-size: 18px;
   font-weight: normal;
   margin: 0;
-  padding: 0;
-}
-
-.table {
-  margin: 0;
-  padding: 0;
-  width: 1100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: auto;
-}
-
-.table__cell {
-  width: 250px;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 60px;
-  list-style: none;
-}
-
-.table__sub-text {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 
 /* Feynman Block */
@@ -200,10 +194,10 @@
   background-color: #f2f2f2;
   height: 790px;
   position: relative;
-  padding-top: 100px;
-  background-image: url(../images/feynman.png);
+  background-image: url('../images/feynman.png');
   background-repeat: no-repeat;
   background-position: bottom left;
+  padding-top: 100px;
   left: 0;
   bottom: 0;
 }
@@ -248,42 +242,26 @@
 .kaufman {
   background-color: #1f1f1f;
   margin: 0;
-  padding: 0;
   padding: 90px 0;
   overflow: hidden;
   position: relative;
   z-index: 1;
-  min-height: 600px;
-  max-height: 756px;
+  max-height: 600px;
 }
 
 .section-title_theme_dark {
   color: white;
-  line-height: 69px;
-  font-size: 60px;
-  font-weight: bold;
-  width: 60%;
-  text-align: center;
-  margin: 0 auto;
 }
 
 .section-subtitle_theme_dark {
   color: #f2f2f2;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  width: 60%;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0;
-  padding-top: 20px;
 }
 
 .kaufman__triangle {
-  background-image: url(../images/kaufman-triangle.svg);
+  background-image: url('../images/kaufman-triangle.svg');
   background-size: contain;
   width: 877px;
-  height: 850px;
+  height: 877px;
   position: absolute;
   top: 0;
   right: -210px;
@@ -291,38 +269,27 @@
 }
 
 .table_theme_dark {
-  margin: 0;
-  padding: 0;
-  width: 1100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: auto;
+  margin-bottom: 90px;
+  margin-bottom: 0;
 }
 
 /* including elements with key-value modifiers */
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
-  margin: 0;
-  margin-right: 0;
   margin-top: 80px;
-  list-style: none;
-  margin-bottom: 0;
 }
 
 .table__heading_theme_dark {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 20px;
+  color: #f2f2f2;
 }
 
 .table__text_theme_dark {
-  margin: 0;
-  padding: 0;
+  color: #f2f2f2;
 }
 
 /* Footer Block */
+
+/* Once adding a font size to heading or links and set up size to img, some extra spaces is displayed, and is always extra px on font size, why?  please help */
 .footer {
   min-height: 350px;
   background-color: #1f1f1f;
@@ -332,68 +299,73 @@
 
 .footer__columns {
   width: 90%;
-  display: flex;
   margin: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   height: 350px;
 }
 
-.logo_place_footer {
+.logo__place_footer {
+  margin: 0;
+  padding-top: 0;
   width: 183px;
   height: 35px;
 }
 
-.footer__column_content-copyright {
-  flex-basis: 711px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.footer__author {
+  color: #f2f2f2;
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
 }
 
-.footer_author {
+.footer__column_content_info {
+  list-style: none;
   margin: 0;
-  padding: 18px 0;
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-  color: #f2f2f2;
+  padding: 0;
+}
+
+.footer__column_content_social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__column-heading {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 20px;
-  color: #f2f2f2;
+  color: white;
   line-height: 45px;
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 20px;
+  /* border: 1px solid red; */
 }
 
 .footer__column-links {
+  color: #f2f2f2;
   margin: 0;
   padding: 0;
-  color: #f2f2f2;
-  text-decoration: none;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  padding-bottom: 16px;
-}
-
-.footer__column_content-info {
+  text-decoration: none;
+  margin-bottom: 16px;
   display: flex;
-  flex-direction: column;
-  /* padding-bottom: 16px; */
+  /* border: 1px solid red; */
 }
 
-.footer_column_content-social {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 16px;
-}
-
-.footer__social-icon {
-  width: 16px;
-  height: 16px;
+.footer__column_social-icon {
   padding-right: 10px;
+  /* width: 16px;
+  height: 16px; */
 }
