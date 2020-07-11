@@ -1,10 +1,3 @@
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-
 .page {
   min-width: 1100px;
   /* we don't know how to make mobile versions of websites yet, */
@@ -28,12 +21,9 @@ h1, h2, h3, h4, h5, h6, p {
   /* parameters for the header section */
 }
 
-.logo__header {
+.logo_place_header {
   width: 154px;
   height: 31px;
-}
-
-.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -54,11 +44,13 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
   width: 388px;
   position: absolute;
   bottom: 30px;
   left: 64px;
   z-index: 8;
+  flex-wrap: wrap;
 }
 
 .header__link {
@@ -161,10 +153,9 @@ h1, h2, h3, h4, h5, h6, p {
 
 .table {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 1100px;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -179,6 +170,7 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
+  margin: 0;
 }
 
 .table__text {
@@ -269,7 +261,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .table_theme_dark {
-  margin-bottom: 90px;
   margin-bottom: 0;
 }
 
@@ -288,8 +279,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Footer Block */
-
-/* Once adding a font size to heading or links and set up size to img, some extra spaces is displayed, and is always extra px on font size, why?  please help */
 .footer {
   min-height: 350px;
   background-color: #1f1f1f;
@@ -298,74 +287,78 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .footer__columns {
+  margin: 0 auto;
   width: 90%;
-  margin: auto;
-  /* border: 1px solid red; */
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
 .footer__column_content_copyright {
-  flex-basis: 711px;
-  list-style: none;
+  height: 350px;
   margin: 0;
   padding: 0;
+  flex-basis: 711px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 350px;
 }
 
-.logo__place_footer {
-  margin: 0;
-  padding-top: 0;
+.logo_place_footer {
   width: 183px;
   height: 35px;
 }
 
 .footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
   color: #f2f2f2;
   list-style: none;
-  margin: 16px 0;
-  padding: 0;
+  margin: 18px 0;
 }
 
 .footer__column_content_info {
   list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer__column_content_social {
-  list-style: none;
+  text-decoration: none;
+  height: 350px;
   margin: 0;
   padding: 0;
 }
 
 .footer__column-heading {
-  color: white;
+  color: #f2f2f2;
   line-height: 45px;
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 20px;
-  /* border: 1px solid red; */
+  margin: 0 0 20px 0;
 }
 
 .footer__column-links {
-  color: #f2f2f2;
-  margin: 0;
-  padding: 0;
+  text-decoration: none;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  text-decoration: none;
-  margin-bottom: 16px;
+  margin: 0;
+  padding: 0;
   display: flex;
-  /* border: 1px solid red; */
+  color: #f2f2f2;
+}
+
+.footer__column-links:last-child {
+  margin-bottom: 16px;
+}
+
+.footer__column_content_social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 .footer__column_social-icon {
-  padding-right: 10px;
-  /* width: 16px;
-  height: 16px; */
+  margin: auto 10px auto 0;
+  height: 16px;
+  width: 16px;
+  padding: 0;
 }
