@@ -18,6 +18,7 @@
   position: relative;
   background-color: #f2f2f2;
   margin-bottom: 100px;
+  overflow: hidden;
   /* parameters for the header section */
 }
 
@@ -59,6 +60,11 @@
 .header__link {
   text-decoration: none;
   color: #2f80ed;
+  transition-duration: .75s;
+}
+
+.header__link:hover {
+  opacity: 0.5;
 }
 
 .header__main-illustration {
@@ -70,7 +76,6 @@
   z-index: 1;
 }
 
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -78,6 +83,11 @@
   position: absolute;
   right: 0;
   top: 64px;
+  transform: rotate(15deg);
+}
+
+.rotation {
+  animation: rotation 20s linear infinite forwards;
 }
 
 /* Description Block */
@@ -125,8 +135,136 @@
   font-weight: bold;
 }
 
-/* Digits Block */
+/* Techniques Block */
+.techniques {
+  padding: 0;
+  padding-top: 100px;
+}
 
+.cards {
+  width: 920px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.cards__item {
+  width: 240px;
+  margin: 0;
+  padding: 0;
+  margin-right: 100px;
+}
+
+.cards__item:last-child {
+  margin-right: 0;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 60px 40px 43px;
+}
+
+.cards__title {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.cards__description {
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+}
+
+/* Video Block */
+.video {
+  padding-top: 100px;
+}
+
+.video__iframes {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: -60px;
+}
+
+.video__iframe {
+  margin-right: 20px;
+}
+
+.video__iframe:last-child {
+  margin-right: 0;
+}
+
+/* Oakley Block */
+.oakley {
+  background-color: #f2f2f2;
+  padding-top: 160px;
+  max-height: 600px;
+}
+
+/* Feynman Block */
+.feynman {
+  background-color: #f2f2f2;
+  height: 790px;
+  position: relative;
+  background-image: url('../images/feynman.png');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  padding-top: 80px;
+  left: 0;
+  bottom: 0;
+}
+
+.feynman__title {
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  width: 775px;
+  margin: 0 auto;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 70px;
+}
+
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  text-decoration: none;
+  color: #000;
+  transition-duration: .75s;
+}
+
+.feynman__link:hover {
+  opacity: 0.5;
+}
+
+.feynman__image {
+  width: 867px;
+  height: 637px;
+}
+
+/* Digits Block */
 .digits {
   max-height: 600px;
   padding: 0;
@@ -135,7 +273,7 @@
 }
 
 .section-title {
-  line-height: 69px;
+  line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
   width: 60%;
@@ -181,55 +319,6 @@
   font-weight: normal;
   margin: 0;
   margin-top: 20px;
-}
-
-/* Feynman Block */
-.feynman {
-  background-color: #f2f2f2;
-  height: 790px;
-  position: relative;
-  background-image: url('../images/feynman.png');
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  padding-top: 100px;
-  left: 0;
-  bottom: 0;
-}
-
-.feynman__title {
-  line-height: 1.15;
-  font-size: 120px;
-  font-weight: bold;
-  width: 775px;
-  margin: 0 auto;
-  padding-bottom: 0;
-  text-align: center;
-}
-
-.feynman__subtitle {
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  margin-top: 70px;
-}
-
-.feynman__link {
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  position: absolute;
-  top: 50%;
-  right: 48px;
-  text-decoration: none;
-  color: #000;
-}
-
-.feynman__image {
-  width: 867px;
-  height: 637px;
 }
 
 /* Kaufman Block */
@@ -337,6 +426,11 @@
   font-weight: normal;
   color: #f2f2f2;
   display: flex;
+  transition-duration: 0.75s;
+}
+
+.footer__column-links:hover {
+  opacity: 0.5;
 }
 
 .footer__column-links:last-child {
@@ -347,4 +441,13 @@
   margin: auto 10px auto 0;
   height: 16px;
   width: 16px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
