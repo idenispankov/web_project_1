@@ -86,10 +86,6 @@
   transform: rotate(15deg);
 }
 
-.rotation {
-  animation: rotation 20s linear infinite forwards;
-}
-
 /* Description Block */
 .description {
   max-height: 600px;
@@ -270,6 +266,7 @@
   padding: 0;
   padding-top: 100px;
   padding-bottom: 100px;
+  overflow: hidden;
 }
 
 .section-title {
@@ -321,6 +318,88 @@
   margin-top: 20px;
 }
 
+/* Khan Block */
+.khan {
+  background-color: #f2f2f2;
+  padding-top: 100px;
+}
+
+.khan__container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.khan__author {
+  margin: 0;
+  padding: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.khan__title {
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.khan__quote {
+  margin: 0;
+  padding: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 790px;
+  margin-bottom: 36px;
+}
+
+.khan__quote-author {
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.khan__quote-author-subline {
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 68px;
+}
+
+.khan__book-container {
+  display: flex;
+  height: 520px;
+}
+
+.khan__book-pic {
+  height: 808px;
+  width: 520px;
+  margin: 0;
+  padding: 0;
+}
+
+.khan__buy-link {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
+  transition-duration: .75s;
+  height: 42px;
+}
+
+.khan__buy-link:hover {
+  opacity: 0.75;
+}
+
 /* Kaufman Block */
 .kaufman {
   background-color: #1f1f1f;
@@ -367,6 +446,28 @@
 
 .table__text_theme_dark {
   color: #f2f2f2;
+}
+
+/* Recourses Block */
+.resources {
+  padding-top: 100px;
+  padding-bottom: 217px;
+}
+
+.recourses__logo-zone {
+  width: 1100px;
+  padding: 0;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.recourses__logo {
+  width: 270px;
+  height: 38px;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 /* Footer Block */
@@ -427,6 +528,7 @@
   color: #f2f2f2;
   display: flex;
   transition-duration: 0.75s;
+  width: 93.7px;
 }
 
 .footer__column-links:hover {
@@ -441,6 +543,11 @@
   margin: auto 10px auto 0;
   height: 16px;
   width: 16px;
+}
+
+/* Rotation animation */
+.rotation {
+  animation: rotation 20s linear infinite;
 }
 
 @keyframes rotation {
