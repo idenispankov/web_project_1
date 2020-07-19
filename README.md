@@ -1,3 +1,1 @@
-Trial of make a title for project.
-Another line
-<h1>Trial HTML heading</h1>
+<h1>Web_project_1 from <a href="practicum.yandex.com" target="_blank"></a></h1>
