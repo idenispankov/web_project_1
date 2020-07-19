@@ -1,0 +1,10 @@
+.cards__item {
+  width: 240px;
+  margin: 0;
+  padding: 0;
+  margin-right: 100px;
+}
+
+.cards__item:last-child {
+  margin-right: 0;
+}
