@@ -5,6 +5,7 @@
 
 .cards {
   width: 920px;
+  padding: 0;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
