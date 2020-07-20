@@ -3,5 +3,6 @@
   width: 620px;
   margin: 0;
   padding: 0;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center top;
 }

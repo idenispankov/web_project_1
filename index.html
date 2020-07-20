@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./vendor/normalize.css">
   <link rel="stylesheet" href="./pages/index.css">
   <title>Learning how to learn</title>
 </head>
@@ -48,8 +47,6 @@
             <h3 class="cards__title">Interleaving</h3>
             <p class="cards__description">When you learn multiple skills at the same time, they reinforce each other.</p>
           </div>
-        </div>
-        <div class="cards">
           <div class="cards__item">
             <img src="./images/cards-question.png" alt="picture of large hall with one person" class="cards__image">
             <h3 class="cards__title">Questions</h3>
@@ -66,10 +63,10 @@
       <section class="video">
         <h2 class="section-title">TED talks</h2>
         <p class="section-subtitle">For lovers of procrastination</p>
-        <div class="video__iframes">
-          <iframe class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <ul class="video__iframes">
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </ul>
       </section>
 
       <section class="oakley">
@@ -194,20 +191,20 @@
     <section class="resources">
       <h2 class="section-title">Useful resources</h2>
       <p class="section-subtitle">Further materials on learning techniques and hacks.</p>
-      <div class="resourses__logo-zone">
-        <div class="resourses__logo">
+      <ul class="resourses__logo-zone">
+        <a href="#">
           <img class="resourses__logo" src="./images/resources-tedED.png" alt="TEDEd logo">
-        </div>
-        <div class="resourses__logo">
+        </a>
+        <a href="#">
           <img class="resourses__logo" src="./images/resources-Medium.png" alt="TEDEd logo">
-        </div>
-        <div class="resourses__logo">
+        </a>
+        <a href="#">
           <img class="resourses__logo" src="./images//resources-dezeen.png" alt="TEDEd logo">
-        </div>
-        <div class="resourses__logo">
+        </a>
+        <a href="#">
           <img class="resourses__logo" src="./images/resources-goodreads.png" alt="TEDEd logo">
-        </div>
-      </div>
+        </a>
+      </ul>
     </section>
 
     <footer class="footer">
@@ -220,9 +217,13 @@
           <h4 class="footer__column-heading">About Practicum by Yandex</h4>
           <ul class="footer__column-links">
               <li>
-                <a class="footer__column-links" href="#">Home page</a>
-                <a class="footer__column-links" href="#">Concept</a>
-                <a class="footer__column-links" href="#">Mentors</a>
+                <a class="footer__column-link" href="#">Home page</a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#">Concept</a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#">Mentors</a>
               </li>
           </ul>
         </div>
@@ -230,8 +231,10 @@
           <h4 class="footer__column-heading">Social media</h4>
           <ul class="footer__column-links">
             <li>
-              <a href="https://facebook.com" target="_blank" class="footer__column-links"><img src="./images/facebook_color_white.svg" alt="Facebook icon" class="footer__social-icon">Facebook</a>
-              <a href="https://instagram.com" target="_blank" class="footer__column-links"><img src="./images/instagram_color_white.svg" alt="Instagram icon" class="footer__social-icon">Instagram</a>
+              <a href="https://facebook.com" target="_blank" class="footer__column-link"><img src="./images/facebook_color_white.svg" alt="Facebook icon" class="footer__social-icon">Facebook</a>
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank" class="footer__column-link"><img src="./images/instagram_color_white.svg" alt="Instagram icon" class="footer__social-icon">Instagram</a>
             </li>
           </ul>
         </div>

@@ -3,9 +3,9 @@
   font-size: 30px;
   font-weight: normal;
   text-decoration: none;
+  align-self: start;
   color: #2f80ed;
   transition-duration: .75s;
-  height: 42px;
 }
 
 .khan__buy-link:hover {

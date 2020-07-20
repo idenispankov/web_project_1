@@ -1,4 +1,4 @@
-<h1>Learning how to learn</h1>
+# Learning how to learn
 
 This project is about learning how to learn.
 Contains pictures and youtube videos (iframe used) of valuable information,
@@ -8,12 +8,11 @@ Used animaion for infinite rotation of header and kaufman blocks.
 File structure and css selectors were written according
 BEM (Block Element Modifier) methodology.
 
+## Project Guide
 I did this project from scratch following design documentation
-provided by Practicum by Yandex during my study of Web Development Course.
+provided by [Practicum by Yandex](https://www.practicum.yandex.com) during my study of Web Development Course.
 
-For more details about course please check https://www.practicum.yandex.com
-
-Plans to update project:
+## Plans to update project:
 
 1. Add more videos and working links.
 2. Add more different fonts.

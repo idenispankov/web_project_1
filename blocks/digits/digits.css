@@ -1,7 +1,5 @@
 .digits {
-  max-height: 600px;
   padding: 0;
   padding-top: 100px;
   padding-bottom: 100px;
-  overflow: hidden;
 }
