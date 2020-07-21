@@ -2,9 +2,8 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: -60px;
+  bottom: -50px;
 }
