@@ -9,6 +9,7 @@ to help you to get on track with your learning.
 * Used animaion for infinite rotation of header and kaufman blocks.
 * File structure and css selectors were written according
 BEM (Block Element Modifier) methodology.
+* Desktop version only for now
 
 ## Project Guide
 * I did this project from scratch following design documentation
@@ -19,4 +20,5 @@ provided by [Practicum by Yandex](https://www.practicum.yandex.com) during my st
 1. Add more videos and working links.
 2. Add more different fonts.
 3. May add some forms for comments and contact.
-4. May add some JavaScript in near future for more dynamic.
+4. Add Responsive Version
+5. May add some JavaScript in near future for more dynamic.
