@@ -1,15 +1,17 @@
 # Learning how to learn
+* (https://idenispankov.github.io/web_project_1/)
 
-This project is about learning how to learn.
-Contains pictures and youtube videos (iframe used) of valuable information,
+## Overview
+* This project is about learning how to learn.
+* Contains pictures and youtube videos (iframe used) of valuable information,
 to help you to get on track with your learning.
-Project were made using HTML5 & CSS3 languages in VScode editor.
-Used animaion for infinite rotation of header and kaufman blocks.
-File structure and css selectors were written according
+* Project were made using HTML5 & CSS3 languages in VScode editor.
+* Used animaion for infinite rotation of header and kaufman blocks.
+* File structure and css selectors were written according
 BEM (Block Element Modifier) methodology.
 
 ## Project Guide
-I did this project from scratch following design documentation
+* I did this project from scratch following design documentation
 provided by [Practicum by Yandex](https://www.practicum.yandex.com) during my study of Web Development Course.
 
 ## Plans to update project:
